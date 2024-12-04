@@ -1,0 +1,613 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: #00d9ff;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 2.5rem;
+    grid-column: 1/3;
+    text-align: center;
+
+}
+
+#inicio{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    background-image: url(../assets/images/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    height: 650px;
+    color: white;
+
+}
+
+header{
+    padding: 20px 40px;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-color: #555b60be;
+}
+
+a{
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+nav{
+    grid-column: 5/10;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px; /*dar espacio*/
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+nav .home{
+    padding: 6px 12px;
+    border: 2px solid #00d9ff;
+    border-radius: 5px;
+
+}
+.title1{
+    grid-column: 2/7;
+    grid-row: 4/5;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: rgba(44, 47, 49, 0.7);
+    padding: 20px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.title2{
+    grid-column: 2/7;
+    grid-row: 5/6;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: rgba(44, 47, 49, 0.7);
+    padding: 20px;
+    border-radius: 0px;
+}
+.contenerdorAzul{
+    background-color: #00bff9;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenerdorAzul{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: repeat(2, 0fr);
+    padding: 80px;
+}
+.contenedorCoffe{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 20px;
+    
+}
+.contenedorInstant{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 20px;
+}
+
+.contenedorSerious{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    margin: 20px;
+}
+
+.contenedorFrame{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    margin: 20px;
+}
+#imagenesNav{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px;
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 1fr;
+    align-items:end;
+}
+
+.imagesPaisajes a{
+
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+}
+.all{
+    color: #00d9ff;
+}
+.paisajes{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 15px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.container4 h1{
+    color: black;
+    text-align: left;
+   
+}
+.container4 p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+   
+}
+
+.visit{
+    margin-top: 10px;
+    padding: 0.8rem 3.2rem;
+    background-color: #74757500;
+    color: white;
+    border: 1px solid #cacaca88;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contenedorImageVideo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 90px;
+    padding: 40px;
+    margin-top: 40px;
+    background-color:darkgray ;
+}
+
+
+/* portatil*/
+
+.twiter{
+    background-color: #00d9ff;
+    padding:45px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+   
+}
+
+.twiter h1{
+    text-align: start;
+    font-weight: 0px;
+}
+.container-Twiter{
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Título, línea y logo */
+    align-items: center;
+}
+
+.twiter p{
+    color: white;
+}
+.arrobaTwiter{
+    font-weight: bold;
+    color: white;
+}
+.container-fondoCamara{
+    color: white;
+  text-align: center;
+  padding: 40px;
+  background: url(../assets/images/bg_whoIs.png) center ; /* Imagen de fondo */
+  max-width: 10000px;
+  max-height: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.container-fondoCamara h1{
+    text-align: start;
+    padding-top: 50px;
+}
+.textContainer5{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    width: fit-content;
+    justify-self: center;
+    color:white;
+    padding-top: 30px;
+    text-align: start;
+    padding-block-end: 150px;
+    
+}
+.container6{
+    padding: 40px;
+    font-family:sans-serif;
+    color: rgba(0, 0, 0, 0.685);
+}
+.container6 h1{
+    color: black;
+    text-align: start;
+}
+.container6 p{
+    margin-top: 10px;
+    font-size: 20px;
+
+
+}
+.walter{
+    font-weight: bold;
+    margin-top: 50px;
+}
+.contact-section {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    color: white;
+    padding: 30px;
+    background: url(../assets/images/bg_contact.png) center ; /* Imagen de fondo */
+    max-width: 10000px;
+    max-height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.container-contact {
+    background: url('../assets/images/bg_contact.png') center center no-repeat;
+    background-size: cover;
+    display: grid;
+    gap: 20px;
+    padding: 100px;
+    color: white;
+}
+
+.contact {
+    display: grid;
+    gap: 30px;
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.left {
+    display: grid;
+    gap: 20px;
+}
+
+.group {
+    display: grid;
+    gap: 5px;
+
+}
+
+.label {
+    font-size: 14px;
+    color: white;
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0 5px;
+    color: white;
+}
+
+.right {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-description {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    width: 400px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.message-part {
+    display: grid;
+    gap: 15px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.form-textarea {
+    height: 200px;
+    border: 2px solid white;
+    padding: 5px;
+    background: transparent;
+    color: white;
+}
+
+.button-message {
+    width: 15%;
+    padding: 12px 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(0, 217, 255); 
+}
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 60px 100px;
+    background-color: #353F46;
+    font-size: 12px;
+    color: white;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: start;
+}
+
+.link {
+    font-size: 12px;
+    text-align: center;
+    color: #515f67;
+}
+
+.link span {
+    margin: 0 5px;
+    color: #515f67;
+}
+
+
+.footerInformation {
+    text-align: right;
+    align-self: center;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: #515f67;
+}
+
+.footer-copy {
+    grid-column: 7; /* Posiciona el texto de copyright en la tercera columna */
+    color: #B0BEC5;
+    font-size: 12px;
+}
+@media (max-width:1279px){
+    .paisajes{
+        grid-template-columns: repeat(3, auto);
+
+    }
+    #barraInicio{
+        grid-column: 4 / 10;
+        font-size: 15px;
+    }
+    .container4 h1{
+        font-size: 20px;
+    }
+    .container4 p{
+        font-size: 15px;
+    }
+    .container4Image img{
+        width: 520px;
+    }
+
+
+}
+@media screen and (max-width:920px) {
+    
+    #barraInicio{
+        grid-column: 4 / 10;
+        font-size: 10px;
+    }
+    .paisajes{
+        grid-template-columns: repeat(2, auto);
+
+    }
+    .container4Image img{
+        width: 420px;
+        text-align: center;
+    }
+
+    .container4 p{
+        margin-top: 10px;
+    }
+
+    #imagenesNav{
+        font-size: 12px;
+    }
+
+    .contenedorImageVideo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-size: 10px;
+        grid-template-rows: repeat(2, auto);
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #barraInicio {
+        grid-column: 1 / 11;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .contenerdorAzul {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .contenedorCoffe, 
+    .contenedorInstant, 
+    .contenedorSerious, 
+    .contenedorFrame {
+        grid-column: 1;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .paisajes {
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+
+    #imagenesNav {
+        font-size: 12px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .container4 h1 {
+        font-size: 18px;
+    }
+
+    .container4 p {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .contenedorImageVideo {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .container4Image img {
+        width: 100%;
+    }
+
+    .textContainer5{
+        padding-block-end: 0px;
+    }
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .input, .contact-description {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #inicio {
+        height: 500px;
+    }
+
+    .title1, .title2 {
+        grid-column: 1/8;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #barraInicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paisajes {
+        grid-template-columns: 1fr;
+    }
+
+    .contenerdorAzul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    .contenedorCoffe, 
+    .contenedorInstant, 
+    .contenedorSerious, 
+    .contenedorFrame {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contenerdorAzul img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .container-contact {
+        padding: 50px 20px;
+    }
+
+    .contact-description {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .button-message {
+        width: 100%;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footerInformation {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
